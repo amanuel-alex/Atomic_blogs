@@ -1,3 +1,10 @@
+import AppNav from "./components/AppNav";
+
 function App() {
-  return <>hello world!</>;
+  return (
+    <>
+      <AppNav />
+    </>
+  );
 }
+export default App;

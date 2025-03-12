@@ -1,0 +1,88 @@
+/* AppNav.module.css */
+
+/* Light and dark background for the entire page */
+.lightBackground {
+  background-color: white;
+  color: black;
+}
+
+.darkBackground {
+  background-color: black;
+  color: white;
+}
+
+/* Basic Navbar styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.rightMenu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.themeToggle {
+  padding: 8px 12px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.themeToggle:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.themeToggle:focus {
+  outline: none;
+  background-color: #f39c12;
+  transform: scale(1.1);
+}
+
+/* Light theme styles */
+.lighttheme {
+  background-color: #f39c12;
+  color: #333;
+}
+
+/* Dark theme styles */
+.darktheme {
+  background-color: #444;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rightMenu {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
